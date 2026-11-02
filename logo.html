@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prada Fashion</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="logo.css">
+</head>
+
+<body>
+    <div class="logo">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoI68s2dqmJfqQ-m6mcd6DHqdWmqYD4g7doKD_H_84cvAik0Qz6lBXyMFs&s=10" alt="Logo Prada">
+        <span>Prada <span class="blue">Fashion</span></span>
+    </div>
+    <div class="header-right">
+        <p class="Welcome">Chào mừng đến với cửa hàng Prada</p>
+        <div class="acount">
+            <a href="account.html">Tài khoản của tôi</a>
+            <a href="#favorites">Yêu thích</a>
+            <a href="#cartPanel">Giỏ hàng</a>
+            <a href="account.html">Thanh toán</a>
+            <a href="admin.html">Quản trị</a>
+        </div>
+    </div>
+    <div class="search-cart">
+        <div class="search">
+            <input type="text" id="searchInput" placeholder="Tìm kiếm sản phẩm">
+            <button onclick="searchProducts()" aria-label="Tìm kiếm">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+        <div class="cart">
+            <i class="fas fa-shopping-cart"></i> Giỏ hàng: <span id="cartTotal">0.00 $</span>
+        </div>
+    </div>
+    <div id="products">
+        <h2>Sản phẩm</h2>
+    </div>
+    <div id="favorites"></div>
+    <div id="cartPanel"></div>
+    <script src="logo.js"></script>
+</body>
+
+</html>

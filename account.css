@@ -1,0 +1,132 @@
+/* Giao diện chung */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    font-size: 18px;
+}
+
+
+/* Khung tài khoản */
+
+.account-box {
+    box-sizing: border-box;
+    width: 90%;
+    max-width: 550px;
+    margin: 50px auto;
+    padding: 30px;
+    border: 1px solid red;
+    border-radius: 8px;
+}
+
+
+/* Tên cửa hàng */
+
+h1 {
+    text-align: center;
+    color: steelblue;
+    font-size: 36px;
+    margin: 25px 0 30px;
+}
+
+
+/* Tiêu đề đăng ký và đăng nhập */
+
+h2 {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 25px;
+}
+
+
+/* Ẩn form, JavaScript sẽ hiện form được chọn */
+
+#register,
+#login {
+    display: none;
+}
+
+
+/* Ô nhập thông tin */
+
+input {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px;
+    font-size: 18px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+}
+
+input:focus {
+    outline: none;
+    border-color: black;
+}
+
+
+/* Nút đăng ký và đăng nhập */
+
+.submit {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    padding: 13px;
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background-color: gray;
+}
+
+
+/* Nội dung và thông báo */
+
+p {
+    text-align: center;
+    line-height: 1.5;
+}
+
+#message {
+    color: red;
+}
+
+a {
+    color: steelblue;
+}
+
+a:hover {
+    color: gray;
+}
+
+.back {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    .account-box {
+        margin: 25px auto;
+        padding: 20px;
+    }
+    h1 {
+        font-size: 28px;
+    }
+    h2 {
+        font-size: 22px;
+    }
+    input,
+    .submit {
+        font-size: 16px;
+    }
+}

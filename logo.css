@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: black;
+    background-color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 30px;
+    border-bottom: 1px solid lightgray;
+}
+
+.logo img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+.logo span {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.logo .blue {
+    color: steelblue;
+}
+
+.header-right {
+    padding: 15px 30px;
+    border-bottom: 1px solid lightgray;
+}
+
+.Welcome {
+    margin: 5px 0 25px;
+    font-size: 42px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.acount {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-bottom: 15px;
+}
+
+.acount a {
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.acount a:hover {
+    color: gray;
+    text-decoration: underline;
+}
+
+.search-cart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px 30px;
+    border-bottom: 1px solid lightgray;
+}
+
+.search {
+    display: flex;
+    width: 450px;
+    max-width: 100%;
+}
+
+.search input {
+    box-sizing: border-box;
+    flex: 1;
+    min-width: 0;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid gray;
+}
+
+.search button {
+    padding: 12px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: red;
+    border: none;
+    cursor: pointer;
+}
+
+.search button:hover {
+    background-color: gray;
+}
+
+.cart {
+    font-size: 18px;
+}
+
+.cart span {
+    font-weight: bold;
+}
+
+#products,
+#favorites,
+#cartPanel {
+    margin: 25px 30px;
+}
+
+#products h2,
+#favorites h2,
+#cartPanel h2 {
+    font-size: 24px;
+}
+
+@media (max-width: 600px) {
+    .logo {
+        padding: 15px;
+    }
+    .logo img {
+        width: 55px;
+        height: 55px;
+    }
+    .logo span {
+        font-size: 22px;
+    }
+    .header-right {
+        padding: 15px;
+    }
+    .Welcome {
+        font-size: 26px;
+        text-align: center;
+    }
+    .acount {
+        gap: 15px;
+        margin-bottom: 10px;
+    }
+    .acount a {
+        font-size: 16px;
+    }
+    .search-cart {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 15px;
+    }
+    .search {
+        width: 100%;
+    }
+    .search input {
+        width: 100%;
+    }
+    .cart {
+        font-size: 16px;
+    }
+    #products,
+    #favorites,
+    #cartPanel {
+        margin: 20px 15px;
+    }
+}

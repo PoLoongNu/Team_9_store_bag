@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prada Fashion - Tài khoản</title>
+    <link rel="stylesheet" href="account.css">
+</head>
+
+<body>
+    <div class="account-box">
+        <h1>Prada Fashion</h1>
+
+        <div id="register">
+            <h2>Đăng ký tài khoản</h2>
+
+            <input type="text" id="name" placeholder="Tên người dùng">
+            <input type="password" id="regPass" placeholder="Mật khẩu">
+
+            <button class="submit" onclick="register()">Đăng ký</button>
+
+            <p>
+                Bạn đã có tài khoản?
+                <a href="#" onclick="showForm('login'); return false;">Đăng nhập</a>
+            </p>
+        </div>
+
+        <div id="login" style="display: none;">
+            <h2>Đăng nhập tài khoản</h2>
+
+            <input type="text" id="loginName" placeholder="Tên người dùng">
+            <input type="password" id="loginPass" placeholder="Mật khẩu">
+
+            <button class="submit" onclick="login()">Đăng nhập</button>
+
+            <p>
+                Bạn chưa có tài khoản?
+                <a href="#" onclick="showForm('register'); return false;">Đăng ký</a>
+            </p>
+        </div>
+
+        <p id="message"></p>
+        <a class="back" href="logo.html">Quay lại trang chủ</a>
+    </div>
+
+    <script src="account.js"></script>
+</body>
+
+</html>
